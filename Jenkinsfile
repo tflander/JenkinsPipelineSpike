@@ -9,7 +9,8 @@ pipeline {
     }
     stage('Show Workspace') {
       steps {
-        sh 'ls -lrt'
+        sh '''pwd
+ls -lrt'''
       }
     }
   }
