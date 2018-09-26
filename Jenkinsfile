@@ -7,5 +7,10 @@ pipeline {
         git(url: 'https://github.com/tflander/rulesEngineLambda.git', branch: 'master')
       }
     }
+    stage('Show Workspace') {
+      steps {
+        sh 'ls -lrt'
+      }
+    }
   }
 }
